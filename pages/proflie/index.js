@@ -332,7 +332,7 @@ export default function ProfilePage() {
         <div className="work__projects">
           <div>
             <a
-              href="https://github.com/kimsoonhong/codecamp-02/tree/master/freeboard_frontend"
+              href="https://github.com/kimsoonhong/ForntEnd"
               className="project"
               target="blank"
             >
