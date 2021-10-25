@@ -1,0 +1,47 @@
+import {
+  Wrapper,
+  BottomWrapper,
+  Button,
+  Contents,
+  ContentsWrapper,
+} from "./answerWrite.styles";
+import { FormOutlined } from "@ant-design/icons";
+
+import { ChangeEvent } from "react";
+
+interface IAnswerWriteUIProps {
+  onChangeContents: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+  onClickAnswerSubmit: () => void;
+  onClickUpdateAnswer: () => void;
+  onClickRecomment: () => void;
+  isEdit: boolean;
+  data: any;
+}
+
+export default function AnswerWriteUI(props: IAnswerWriteUIProps) {
+  return (
+    <div>
+      <Wrapper>
+        <FormOutlined style={{ fontSize: "20px", marginRight: "25px" }} />
+        <ContentsWrapper>
+          <Contents
+            name="contents"
+            onChange={props.onChangeContents}
+            placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."
+          />
+          <BottomWrapper>
+            <Button
+              onClick={
+                props.isEdit
+                  ? props.onClickUpdateAnswer
+                  : props.onClickAnswerSubmit
+              }
+            >
+              {props.isEdit ? "답글수정" : "답글등록"}
+            </Button>
+          </BottomWrapper>
+        </ContentsWrapper>
+      </Wrapper>
+    </div>
+  );
+}
