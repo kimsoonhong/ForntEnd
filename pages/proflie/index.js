@@ -1,13 +1,16 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 // import { GlobalContext } from "../../../../../pages/_app";
 import "../../pages/proflie/";
 import { Dropdown, Modal } from "antd";
 import { DownOutlined } from "@ant-design/icons";
+import { useRouter } from "next/router";
+import { GlobalContext } from "../../pages/_app";
 
 export default function ProfilePage() {
   const [isModal, setIsModal] = useState(false);
-  // const { page, setPage } = useContext(GlobalContext);
-
+  const { setIsLayout } = useContext(GlobalContext);
+  const router = useRouter();
+  setIsLayout(true);
   const st = useRef();
   const nd = useRef();
   const ed = useRef();
@@ -25,6 +28,10 @@ export default function ProfilePage() {
   };
   const onClickth = () => {
     th.current.click();
+  };
+
+  const onClickrecipe = () => {
+    router.push(`/recipe`);
   };
 
   const onClickRecipe = () => {
@@ -466,6 +473,9 @@ export default function ProfilePage() {
               <div onClick={onClickRecipe} className="project__Enter">
                 자세히보기
               </div>
+              <a onClick={onClickrecipe} className="project__Enter">
+                체험하기
+              </a>
             </div>
           </div>
 

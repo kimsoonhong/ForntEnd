@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
-import Sidebar from "../../src/components/units/mypages/sidebar/Sidebar.container";
-import MyPoint from "../../src/components/units/mypages/myPoint/myPoint.container";
-import MyProfile from "../../src/components/units/mypages/myProfile/myProfile.container";
-import MyMarket from "../../src/components/units/mypages/myMarket/myMarket.container";
-import { useState } from "react";
+import Sidebar from "../../src/components/units/codecamp/mypages/sidebar/Sidebar.container";
+import MyPoint from "../../src/components/units/codecamp/mypages/myPoint/myPoint.container";
+import MyProfile from "../../src/components/units/codecamp/mypages/myProfile/myProfile.container";
+import MyMarket from "../../src/components/units/codecamp/mypages/myMarket/myMarket.container";
+import { useContext, useState } from "react";
+import { GlobalContext } from "../../pages/_app";
 
 const Wrapper = styled.div`
   width: 1200px;
@@ -16,6 +17,8 @@ const Wrapper = styled.div`
 
 export default function mypage() {
   const [page, setPage] = useState("myprofile");
+  const { setIsLayout } = useContext(GlobalContext);
+  setIsLayout(true);
 
   return (
     <Wrapper>

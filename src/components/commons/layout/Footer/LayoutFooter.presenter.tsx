@@ -24,8 +24,13 @@ export default function LayoutFooterUI() {
       <Email>shong1332@naver.com</Email>
 
       <GithubOutlined style={{ fontSize: "28px" }} />
+      {/* <div>ver - 2.0.0</div> */}
+      <Bottom>
+        2021 shong - All rights reserved
+        <br />
+        ver - 2.2.0
+      </Bottom>
 
-      <Bottom>2021 shong - All rights reserved</Bottom>
       {/* @ts-ignore */}
       <ArrowUP scrollY={scrollY} onClick={scrollToTop} />
     </Wrapper>

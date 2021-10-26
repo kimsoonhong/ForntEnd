@@ -1,7 +1,6 @@
-// import { request, gql } from "graphql-request";
-import MarketDetail from "../../../src/components/units/market/detail/MarketDetail.container";
-import QuestionList from "../../../src/components/units/marketComment/questionList/questionList.container";
-import QuestionWrite from "../../../src/components/units/marketComment/questionWrite/questionWrite.container";
+import MarketDetail from "../../../src/components/units/codecamp/market/detail/MarketDetail.container";
+import QuestionList from "../../../src/components/units/codecamp/marketComment/questionList/questionList.container";
+import QuestionWrite from "../../../src/components/units/codecamp/marketComment/questionWrite/questionWrite.container";
 import Head from "next/head";
 import { request, gql } from "graphql-request";
 const FETCH_USEDITEM = gql`

@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import { breakPoints } from "../../../src/components/units/recipe/src/commons/styles/media";
 
 export const globalStyles = css`
   * {
@@ -836,6 +837,63 @@ export const globalStyles = css`
       opacity: 0;
       transition: ease-in 350ms all;
       pointer-events: none;
+    }
+
+    :root {
+      /* font-size */
+      --font-large: 32px;
+      --font-medium: 20px;
+      --font-regular: 16px;
+      --font-small: 12px;
+      --font-micro: px;
+
+      /* font-weight */
+      --weight-bold: 800;
+      --weight-semi-bold: 600;
+      --weight-regular: ;
+
+      /* color */
+      --color-yellow: #fed500;
+      --color-gray: #b4b4b4;
+      --color-light-gray: #f8f8f8;
+
+      @media ${breakPoints.tablet} {
+        /* font-size */
+        --font-large: 44px;
+        --font-medium: 36px;
+        --font-regular: 24px;
+        --font-small: 20px;
+        --font-micro: 18px;
+
+        /* font-weight */
+        --weight-bold: 800;
+        --weight-semi-bold: 600;
+        --weight-regular: ;
+
+        /* color */
+        --color-yellow: #fed500;
+        --color-gray: #b4b4b4;
+        --color-light-gray: #f8f8f8;
+      }
+
+      @media ${breakPoints.web} {
+        /* font-size */
+        --font-large: 52px;
+        --font-medium: 44px;
+        --font-regular: 36px;
+        --font-small: 24px;
+        --font-micro: px;
+
+        /* font-weight */
+        --weight-bold: 800;
+        --weight-semi-bold: 600;
+        --weight-regular: ;
+
+        /* color */
+        --color-yellow: #fed500;
+        --color-gray: #b4b4b4;
+        --color-light-gray: #f8f8f8;
+      }
     }
   }
 `;

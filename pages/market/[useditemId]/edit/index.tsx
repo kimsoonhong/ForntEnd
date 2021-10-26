@@ -1,4 +1,4 @@
-import MarketWrite from "../../../../src/components/units/market/write/MarketWrite.container";
+import MarketWrite from "../../../../src/components/units/codecamp/market/write/MarketWrite.container";
 import { useQuery, gql } from "@apollo/client";
 import { useRouter } from "next/router";
 

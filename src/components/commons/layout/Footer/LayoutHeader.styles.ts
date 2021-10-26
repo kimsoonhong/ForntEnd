@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   /* background-color: #2a652f; */
   background-image: url(/images/gc/a.png);
   background-size: cover;
-  height: 260px;
+  height: 280px;
 `;
 
 export const Title = styled.div`
@@ -30,6 +30,7 @@ export const Bottom = styled.div`
   margin: auto;
   font-size: 12px;
   padding: 20px 0px;
+  text-align: center;
 `;
 
 export const ArrowUP = styled(UpCircleFilled)`
