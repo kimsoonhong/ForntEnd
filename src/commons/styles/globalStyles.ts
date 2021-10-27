@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { breakPoints } from "../../../src/components/units/recipe/src/commons/styles/media";
+import { breakPoints } from "../../components/unit/recipe/src/commons/styles/media";
 
 export const globalStyles = css`
   * {
@@ -52,9 +52,12 @@ export const globalStyles = css`
     --color-grey: #616161;
     --color-light-grey: #7c7979;
     --color-wood: #9e7c48;
-    --color-yellow: #fff7d1;
+    --color-light-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
+    --color-yellow: #fed500;
+    --color-gray: #b4b4b4;
+    --color-light-gray: #f8f8f8;
 
     /* Font size */
     --font-large: 48px;
@@ -124,7 +127,7 @@ export const globalStyles = css`
   }
 
   h3 {
-    ont-size: var(--font-regular);
+    font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--color-black);
     margin: 8px 0;
@@ -366,7 +369,7 @@ export const globalStyles = css`
   /* skill */
 
   #skills {
-    background-color: var(--color-yellow);
+    background-color: var(--color-light-yellow);
   }
 
   .section__container {
@@ -853,9 +856,6 @@ export const globalStyles = css`
       --weight-regular: ;
 
       /* color */
-      --color-yellow: #fed500;
-      --color-gray: #b4b4b4;
-      --color-light-gray: #f8f8f8;
 
       @media ${breakPoints.tablet} {
         /* font-size */
@@ -869,11 +869,6 @@ export const globalStyles = css`
         --weight-bold: 800;
         --weight-semi-bold: 600;
         --weight-regular: ;
-
-        /* color */
-        --color-yellow: #fed500;
-        --color-gray: #b4b4b4;
-        --color-light-gray: #f8f8f8;
       }
 
       @media ${breakPoints.web} {
@@ -888,11 +883,6 @@ export const globalStyles = css`
         --weight-bold: 800;
         --weight-semi-bold: 600;
         --weight-regular: ;
-
-        /* color */
-        --color-yellow: #fed500;
-        --color-gray: #b4b4b4;
-        --color-light-gray: #f8f8f8;
       }
     }
   }

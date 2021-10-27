@@ -1,4 +1,4 @@
-import Recipelist from "../../src/components/units/recipe/src/components/unit/recipeList/recipelist.container";
+import Recipelist from "../../src/components/unit/recipe/src/components/unit/recipeList/recipelist.container";
 import { useContext } from "react";
 import { GlobalContext } from "../../pages/_app";
 

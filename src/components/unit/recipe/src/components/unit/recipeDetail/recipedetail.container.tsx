@@ -1,4 +1,4 @@
-import RecipedetailUI from "../recipeDetail/recipedetail.presenter";
+import RecipedetailUI from "./recipedetail.presenter";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

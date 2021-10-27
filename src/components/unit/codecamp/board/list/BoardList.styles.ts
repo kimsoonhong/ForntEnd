@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   /* background-color: red; */
 `;
 export const InnerWrapper = styled.div`
-  width: 1200px;
+  width: 70%;
   /* margin: 800px; */
   margin: auto;
   /* background-color: aqua; */
@@ -63,6 +63,7 @@ export const Footer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  /* background-color: antiquewhite; */
   padding-top: 50px;
 `;
 

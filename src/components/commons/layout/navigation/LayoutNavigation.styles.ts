@@ -20,8 +20,7 @@ export const Wrapper = styled.div`
 
   padding: 0 20%;
   z-index: 12;
-  min-width: 880px;
-
+  /* min-width: 880px; */
 `;
 
 interface Iprops {
@@ -30,7 +29,8 @@ interface Iprops {
 
 export const MenuItem = styled.div`
   color: white;
-  padding: 3px 24px;
+
+  /* padding: 3px 24px; */
   /* background-color: aqua; */
   /* width: 101px;
   min-width: 100px; */
@@ -45,12 +45,8 @@ export const MenuItem = styled.div`
     transition: all 400ms ease;
     cursor: pointer;
   }
-
-
 `;
-export const Ber = styled.div`
-
-`;
+export const Ber = styled.div``;
 
 // const Testdiv = styled.div`
 //   color: ${Number(scrollY) > 200 ? "blue" : "green"};

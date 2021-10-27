@@ -1,6 +1,6 @@
 import Button01 from "../../../../commons/Buttons/Button-Middle-01";
 import Button02 from "../../../../commons/Buttons/Button-Middle-02";
-import PickCount from "../../../../../components/commons/PickedCount/MarketPickedCount";
+import PickCount from "../../../../commons/PickedCount/MarketPickedCount";
 import Head from "next/head";
 // import DOMpurify from "dompurify";
 

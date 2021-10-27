@@ -22,7 +22,7 @@ import {
   BodyText,
   ArrowUP,
   Icon,
-} from "../recipeDetail/recipedetail.styles";
+} from "./recipedetail.styles";
 import Checkbox from "../../commons/checkbox";
 import { IRecipedetailUI } from "./recipedetail.type";
 

@@ -1,4 +1,4 @@
-import BoardList from "../../src/components/units/codecamp/board/list/BoardList.container";
+import BoardList from "../../src/components/unit/codecamp/board/list/BoardList.container";
 // import Layout from "../../src/components/commons/layout";
 // import layout from "../../src/components/commons/layout";
 import { GlobalContext } from "../../pages/_app";

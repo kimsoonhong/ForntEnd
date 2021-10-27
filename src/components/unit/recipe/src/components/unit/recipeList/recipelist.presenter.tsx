@@ -2,6 +2,7 @@ import {
   // ============Head============
   HeadWapper,
   HeadTitle,
+  HeadContent,
 
   // ============Body============
   Category,
@@ -22,6 +23,7 @@ export default function RecipelistUI(props: any) {
     <>
       <HeadWapper>
         <HeadTitle>맛있는 요리</HeadTitle>
+        <HeadContent>반응형 페이지 입니다.</HeadContent>
       </HeadWapper>
       <MediaDiv>
         <div>

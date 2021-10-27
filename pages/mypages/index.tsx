@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
-import Sidebar from "../../src/components/units/codecamp/mypages/sidebar/Sidebar.container";
-import MyPoint from "../../src/components/units/codecamp/mypages/myPoint/myPoint.container";
-import MyProfile from "../../src/components/units/codecamp/mypages/myProfile/myProfile.container";
-import MyMarket from "../../src/components/units/codecamp/mypages/myMarket/myMarket.container";
+import Sidebar from "../../src/components/unit/codecamp/mypages/sidebar/Sidebar.container";
+import MyPoint from "../../src/components/unit/codecamp/mypages/myPoint/myPoint.container";
+import MyProfile from "../../src/components/unit/codecamp/mypages/myProfile/myProfile.container";
+import MyMarket from "../../src/components/unit/codecamp/mypages/myMarket/myMarket.container";
 import { useContext, useState } from "react";
 import { GlobalContext } from "../../pages/_app";
 

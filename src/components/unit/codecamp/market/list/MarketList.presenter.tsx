@@ -1,4 +1,4 @@
-import PickCount from "../../../../../components/commons/PickedCount/MarketPickedCount";
+import PickCount from "../../../../commons/PickedCount/MarketPickedCount";
 import InfiniteScroll from "react-infinite-scroller";
 import { NumberWithCommas } from "../../../../../commons/libraries/utils";
 import {
@@ -48,7 +48,7 @@ import {
   TodayProductTag,
 } from "./MarketList.syles";
 import { IMarketListUIProps } from "./MarketList.types";
-import { SearchInput } from "../../../codecamp/board/list/BoardList.styles";
+import { SearchInput } from "../../board/list/BoardList.styles";
 
 export default function marketListUI(props: IMarketListUIProps) {
   return (

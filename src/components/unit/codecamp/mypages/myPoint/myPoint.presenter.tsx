@@ -1,4 +1,4 @@
-import { SearchInput } from "../../../codecamp/board/list/BoardList.styles";
+import { SearchInput } from "../../board/list/BoardList.styles";
 
 import {
   RightWrapper,
