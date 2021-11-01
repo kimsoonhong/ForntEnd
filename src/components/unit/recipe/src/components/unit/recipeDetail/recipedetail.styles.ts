@@ -13,6 +13,8 @@ export const TopWapper = styled.div`
 	@media ${breakPoints.web} {
 		width: 40%;
 		margin: auto;
+		display: flex;
+		flex-direction: row;
 	}
 `;
 export const TopImg = styled.img`

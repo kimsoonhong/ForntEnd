@@ -50,14 +50,14 @@ export default function login() {
 
       // ========임시 로그인 코드 ==========
 
-      localStorage.setItem("localLoginUser", "true");
+      localStorage.setItem("refreshToken", "true");
 
       localStorage.setItem(
         "localUserData",
         JSON.stringify(resultUser.data?.fetchUserLoggedIn)
       );
 
-      const loadlocalLoginUser = localStorage.getItem("localLoginUser");
+      const loadlocalLoginUser = localStorage.getItem("refreshToken");
       const loadlocalUserData = localStorage.getItem("localUserData");
 
       // const aaa = JSON.parse(localStorage.getItem("localLoginUser"));
@@ -73,8 +73,8 @@ export default function login() {
 
       // ========임시 로그인 코드 ==========
     } catch (error) {
-      // Modal.error({ content: error.massage });
-      console.log(error.message);
+      Modal.error({ content: error.massage });
+      // console.log(error.message);
     }
   };
   return (

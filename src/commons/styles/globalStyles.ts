@@ -474,6 +474,7 @@ export const globalStyles = css`
     justify-content: center;
     opacity: 1;
     transition: all 250ms ease-out;
+    
   }
 
   .work__projects.anim-out {

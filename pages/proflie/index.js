@@ -362,6 +362,7 @@ export default function ProfilePage() {
                 display: "flex",
                 justifycontent: "center",
                 padding: "20px  ",
+                marginBottom: "20px",
               }}
             >
               <div onClick={onClickst} className="project__Enter">
@@ -394,6 +395,7 @@ export default function ProfilePage() {
                 display: "flex",
                 justifycontent: "center",
                 padding: "20px  ",
+                marginBottom: "20px",
               }}
             >
               <div onClick={onClicknd} className="project__Enter">
@@ -434,6 +436,7 @@ export default function ProfilePage() {
                 justifycontent: "center",
                 // backgroundColor: "red",
                 padding: "20px  ",
+                marginBottom: "20px",
               }}
             >
               <div onClick={onClicked} className="project__Enter">
@@ -468,6 +471,7 @@ export default function ProfilePage() {
                 justifycontent: "center",
                 // backgroundColor: "red",
                 padding: "20px  ",
+                marginBottom: "20px",
               }}
             >
               <div onClick={onClickRecipe} className="project__Enter">
@@ -504,6 +508,7 @@ export default function ProfilePage() {
                 display: "flex",
                 justifycontent: "center",
                 padding: "20px  ",
+                marginBottom: "20px",
               }}
             >
               <div onClick={onClickth} className="project__Enter">

@@ -29,7 +29,7 @@ export default function signUp() {
           inputs.password
         )
           ? ""
-          : "비밀번호 입력해주세요",
+          : "특수문자 및 대문자를 포함하여 설정해 주세요",
       name: inputs.name ? "" : "이름을 입력해주세요",
     };
     setInputsErrors(newInputsErrors);
@@ -47,7 +47,7 @@ export default function signUp() {
         });
 
         router.push("/login");
-        alert("회원가입");
+        alert("가입된 정보로 로그인 후 이용해주세요.");
       } catch (error) {
         alert(error.message);
       }
