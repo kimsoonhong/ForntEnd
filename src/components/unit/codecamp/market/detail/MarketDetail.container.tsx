@@ -35,7 +35,7 @@ const BoardDetail = () => {
   const onClickBasket = (basketData: any) => () => {
     setIsSetItem(false);
 
-    const baskets = JSON.parse(localStorage.getItem("baskets") || "[]");
+    const baskets = JSON.parse(sessionStorage.getItem("baskets") || "[]");
 
     let isExists = false;
 
@@ -46,16 +46,16 @@ const BoardDetail = () => {
     if (isExists) return;
 
     baskets.push(basketData);
-    localStorage.setItem("baskets", JSON.stringify(baskets));
+    sessionStorage.setItem("baskets", JSON.stringify(baskets));
   };
 
   const onClickDeleteBasket = (basketData: any) => () => {
     setIsSetItem(true);
-    const baskets = JSON.parse(localStorage.getItem("baskets") || "[]");
+    const baskets = JSON.parse(sessionStorage.getItem("baskets") || "[]");
 
     baskets.pop();
 
-    localStorage.setItem("baskets", JSON.stringify(baskets));
+    sessionStorage.setItem("baskets", JSON.stringify(baskets));
   };
   function onClickMoveToEdit() {
     router.push(`/market/${router.query.useditemId}/edit`);

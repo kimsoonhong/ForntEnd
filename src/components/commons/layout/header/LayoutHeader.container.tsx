@@ -115,8 +115,8 @@ export default function LayoutHeader() {
       // await client.clearStore().then(() => {
       //   client.resetStore();
       // });
-      localStorage.removeItem("refreshToken");
-      localStorage.removeItem("localUserData");
+      sessionStorage.removeItem("refreshToken");
+      sessionStorage.removeItem("sessionUserData");
       Modal.info({ content: "로그아웃 되었습니다." });
       router.push("/login");
       await logoutUser();

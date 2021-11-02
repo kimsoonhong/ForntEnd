@@ -31,6 +31,7 @@ export default function signUp() {
           ? ""
           : "특수문자 및 대문자를 포함하여 설정해 주세요",
       name: inputs.name ? "" : "이름을 입력해주세요",
+      
     };
     setInputsErrors(newInputsErrors);
 

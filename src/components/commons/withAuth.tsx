@@ -9,12 +9,12 @@ const withAuth = (Component: any) => (props: any) => {
   const router = useRouter();
 
   useEffect(() => {
-    if (!localStorage.getItem("refreshToken")) {
+    if (!sessionStorage.getItem("refreshToken")) {
       Modal.error({ content: "로그인이 필요한 페이지입니다." });
       router.push("/login/");
     }
   });
-  if (typeof window !== "undefined" && !localStorage.getItem("refreshToken")) {
+  if (typeof window !== "undefined" && !sessionStorage.getItem("refreshToken")) {
     router.push("/login/");
   }
 

@@ -50,20 +50,20 @@ export default function login() {
 
       // ========임시 로그인 코드 ==========
 
-      localStorage.setItem("refreshToken", "true");
+      sessionStorage.setItem("refreshToken", "true");
 
-      localStorage.setItem(
-        "localUserData",
+      sessionStorage.setItem(
+        "sessionUserData",
         JSON.stringify(resultUser.data?.fetchUserLoggedIn)
       );
 
-      const loadlocalLoginUser = localStorage.getItem("refreshToken");
-      const loadlocalUserData = localStorage.getItem("localUserData");
+      const loadsessionLoginUser = sessionStorage.getItem("refreshToken");
+      const loadsessionUserData = sessionStorage.getItem("sessionUserData");
 
-      // const aaa = JSON.parse(localStorage.getItem("localLoginUser"));
+      
 
-      setAccessToken(loadlocalLoginUser);
-      setUserInfo(loadlocalUserData);
+      setAccessToken(loadsessionLoginUser);
+      setUserInfo(loadsessionUserData);
 
       Modal.info({
         content: `${resultUser.data?.fetchUserLoggedIn.name}님 환영합니다`,

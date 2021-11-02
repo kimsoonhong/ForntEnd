@@ -33,10 +33,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [isLayout, setIsLayout] = useState(true);
 
   useEffect(() => {
-    const userToken = localStorage.getItem("localLoginUser") || "";
+    const userToken = sessionStorage.getItem("sessionLoginUser") || "";
     // @ts-ignore
     setAccessToken(userToken);
-    const userInfo = localStorage.getItem("localUserData") || "";
+    const userInfo = sessionStorage.getItem("sessionUserData") || "";
     // @ts-ignore
     setUserInfo(userInfo);
   }, []);
@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("refreshToken")) getAccessToken(setAccessToken);
+    if (sessionStorage.getItem("refreshToken")) getAccessToken(setAccessToken);
   }, []);
 
   const errorLink = onError(({ graphQLErrors, operation, forward }) => {

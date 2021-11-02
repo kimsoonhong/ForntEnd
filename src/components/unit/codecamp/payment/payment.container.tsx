@@ -30,16 +30,16 @@ const FETCH_USER_LOGGED_IN = gql`
 
 export default function payment() {
   const [baskets, setBaskets] = useState([]);
-  const [localUserData, setLocalUserData] = useState({});
+  const [sessionUserData, setsessionUserData] = useState({});
 
   const { data: loginData } = useQuery(FETCH_USER_LOGGED_IN);
 
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("baskets") || "[]");
-    const UserData = JSON.parse(localStorage.getItem("localUserData") || "");
+    const items = JSON.parse(sessionStorage.getItem("baskets") || "[]");
+    const UserData = JSON.parse(sessionStorage.getItem("sessionUserData") || "");
 
     setBaskets(items);
-    setLocalUserData(UserData);
+    setsessionUserData(UserData);
   }, []);
 
   const [amount, setAmount] = useState("");
@@ -59,9 +59,9 @@ export default function payment() {
         name: "노르웨이 회전 의자",
         amount: amount,
         // @ts-ignore
-        buyer_email: localUserData.email,
+        buyer_email: sessionUserData.email,
         // @ts-ignore
-        buyer_name: localUserData.name,
+        buyer_name: sessionUserData.name,
         buyer_tel: "010-4242-4242",
         buyer_addr: "서울특별시 강남구 신사동",
         buyer_postcode: "01181",

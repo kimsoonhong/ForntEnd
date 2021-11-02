@@ -44,7 +44,7 @@ const marketList = () => {
   const [isSetItem, setIsSetItem] = useState(true);
 
   useEffect(() => {
-    const items = JSON.parse(sessionStorage.getItem("todaylist") || "[]");
+    const items = JSON.parse(localStorage.getItem("todaylist") || "[]");
     setBaskets(items);
   }, []);
 
@@ -60,9 +60,9 @@ const marketList = () => {
     // ===========
     const newBaskets = [marketId];
     const baskets = JSON.parse(
-      sessionStorage.getItem("todaylist") || "[]"
+      localStorage.getItem("todaylist") || "[]"
     ).filter((el: any, i: any) => i < 4 && el._id !== marketId._id);
-    sessionStorage.setItem(
+    localStorage.setItem(
       "todaylist",
       JSON.stringify(newBaskets.concat(baskets))
     );
