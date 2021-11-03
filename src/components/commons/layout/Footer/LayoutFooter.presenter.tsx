@@ -28,7 +28,7 @@ export default function LayoutFooterUI() {
       <Bottom>
         2021 shong - All rights reserved
         <br />
-        version - 2.2.2
+        version - 2.3.4
       </Bottom>
 
       {/* @ts-ignore */}
