@@ -1,16 +1,4 @@
-- git :
-
-[GitHub - kimsoonhong/ForntEnd](https://github.com/kimsoonhong/ForntEnd)
-
 - 배포링크 : [https://shong1332.shop](https://shong1332.shop)
-
-![스크린샷 2021-09-04 오후 6.17.53.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63bb05fa-8028-4122-8654-1620c60e3f6c/스크린샷_2021-09-04_오후_6.17.53.png)
-
-![스크린샷 2021-09-04 오후 6.17.18.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3872fe9f-78b6-4878-ac73-1ca06fc86734/스크린샷_2021-09-04_오후_6.17.18.png)
-
-![스크린샷 2021-09-04 오후 6.16.25.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f7281181-f74d-4d10-87d9-1f5cafd11ae9/스크린샷_2021-09-04_오후_6.16.25.png)
-
-![스크린샷 2021-09-04 오후 6.16.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b48e5855-238d-40f6-8d49-ae973219aac9/스크린샷_2021-09-04_오후_6.16.36.png)
 
 ---
 
