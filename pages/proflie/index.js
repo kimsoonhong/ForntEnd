@@ -81,7 +81,7 @@ export default function ProfilePage() {
   // };
 
   return (
-    <>
+    <div style={{ transform: "translateY(-150px)" }}>
       {isModal && (
         <div>
           <Modal
@@ -555,6 +555,6 @@ export default function ProfilePage() {
         ></a>
         dfs
       </a>
-    </>
+    </div>
   );
 }

@@ -19,6 +19,7 @@ export default function LayoutBannerUI() {
     speed: 2000,
     autoplaySpeed: 5000,
     autoplay: true,
+
     // autoplayspeed: 2000,
   };
 

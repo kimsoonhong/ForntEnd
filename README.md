@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- git :
 
-## Getting Started
+[GitHub - kimsoonhong/ForntEnd](https://github.com/kimsoonhong/ForntEnd)
 
-First, run the development server:
+- 배포링크 : [https://shong1332.shop](https://shong1332.shop)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![스크린샷 2021-09-04 오후 6.17.53.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63bb05fa-8028-4122-8654-1620c60e3f6c/스크린샷_2021-09-04_오후_6.17.53.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![스크린샷 2021-09-04 오후 6.17.18.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3872fe9f-78b6-4878-ac73-1ca06fc86734/스크린샷_2021-09-04_오후_6.17.18.png)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![스크린샷 2021-09-04 오후 6.16.25.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f7281181-f74d-4d10-87d9-1f5cafd11ae9/스크린샷_2021-09-04_오후_6.16.25.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![스크린샷 2021-09-04 오후 6.16.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b48e5855-238d-40f6-8d49-ae973219aac9/스크린샷_2021-09-04_오후_6.16.36.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-## Learn More
+## 1. 일반
 
-To learn more about Next.js, take a look at the following resources:
+1. **React-hooks** - 상태관리 로직 작성
+2. **Router** - 페이지 이동 기능 구현
+3. **Yep** - 로그인, 회원가입, 로그아웃 기능 구현
+4. **GlobalContext** - Refresh Token,Access Token를 활용한 로그인 상태관리
+5. **Emotion/styled** - 페이지 구성
+6. **TypeScript** - type, interface 를 활용한 타입 명시
+7. **refreshtoken** 을 활용한 로그인 기능 구현
+8. Layout 기능 구현 (header, banner ,navigation, footer)
+9. 구글 스토리지를 활용한 이미지 CRUD
+10. 각종 라이브러리를 사용한 기능 구현
+    - InfiniteScroll
+    - slick
+    - ant-design
+11. 외부 API
+    - 카카오맵 - 지도 불러오기
+    - 아임포트 - 충전/결제 기능 구현
+12. https 로 보안을 강화함
+13. 배포 - GCP와 Next.js를 통해 SSG로 배포,
+    일부 페이지를 getServerSideProps를 활용하여 **SSR** 형태로 배포함
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 2 .자유게시판
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. 게시글CRUD
+2. 댓글 CRUD
+3. 좋아요/싫어요 카운팅 기능 구현
+4. 리스트 페이지 Pagination 기능 구현
+5. 게시물 내 youtube 영상 표시기능
 
-## Deploy on Vercel
+## 3. 중고마켓
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. 중고상품 등록 CRUD
+2. 댓글 CRUD / 대댓글 CRUD
+3. 내 장바구니 담기 / 오늘 본 상품 기능 구현
+4. 좋아요 기능을 활용한 베스트 상품 표시 기능 구현
+5. 리스트 페이지 InfiniteScroll
+6. 마이페이지
+   1. 비밀번호 변경
+   2. 충전내역 / 구매내역 / 판매내역 페이지 구현
+   3. 내가 등록한 상품 / 내가 찜한 상품 페이지 구현
