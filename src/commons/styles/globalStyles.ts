@@ -4,6 +4,11 @@ import { breakPoints } from "../../components/unit/recipe/src/commons/styles/med
 export const globalStyles = css`
   * {
     margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oboksanghoe_R, Noto Sans KR, BlinkMacSystemFont, Segoe UI,
+      Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      sans-serif;
     /* color: #142b12; */
     input:focus,
     select:focus,
@@ -38,6 +43,21 @@ export const globalStyles = css`
     font-family: "live";
     src: url("/fonts/header.ttf");
   }
+  /* 
+  @font-face {
+    font-family: "Oboksanghoe_B";
+    src: url("/fonts/Oboksanghoe_B.otf");
+  }
+
+  @font-face {
+    font-family: "Oboksanghoe_L";
+    src: url("/fonts/Oboksanghoe_L.otf");
+  }
+
+  @font-face {
+    font-family: "Oboksanghoe_R";
+    src: url("/fonts/Oboksanghoe_R.otf");
+  } */
 
   /* Global */
 
@@ -474,7 +494,6 @@ export const globalStyles = css`
     justify-content: center;
     opacity: 1;
     transition: all 250ms ease-out;
-    
   }
 
   .work__projects.anim-out {

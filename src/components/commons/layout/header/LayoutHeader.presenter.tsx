@@ -157,7 +157,9 @@ export default function LayoutHeaderUI(props: ILayoutHeaderUIProps) {
                   </a>
                 </Dropdown>
               ) : (
-                <span onClick={props.onClickSignUp}>회원가입하기</span>
+                <InnerButton onClick={props.onClickSignUp}>
+                  회원가입하기
+                </InnerButton>
               )}
             </InnerButton>
           </div>
