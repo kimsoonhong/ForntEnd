@@ -16,6 +16,7 @@ export default function ProfilePage() {
   const ed = useRef();
   const th = useRef();
   const recipe = useRef();
+  const imgproject = useRef();
 
   const onClickst = () => {
     st.current.click();
@@ -34,10 +35,16 @@ export default function ProfilePage() {
     router.push(`/recipe`);
   };
 
+  const onClickimgprojectpage = () => {
+    router.push(`/imgproject`);
+  };
+
   const onClickRecipe = () => {
     recipe.current.click();
   };
-
+  const onClickimgproject = () => {
+    imgproject.current.click();
+  };
   const onClickModal = () => {
     setIsModal(true);
   };
@@ -483,6 +490,44 @@ export default function ProfilePage() {
             </div>
           </div>
 
+          <div>
+            <a
+              href="https://github.com/kimsoonhong/img-project"
+              className="project"
+              target="blank"
+            >
+              <img
+                src="/profile/about/imgproject.png"
+                alt="스크린샷 설명"
+                className="project__img"
+              />
+              <div className="project__description">
+                <h3>git site</h3>
+                <span style={{ fontsize: "12px" }}>
+                  토이프로젝트- <br />
+                  캐러셀 만들기
+                </span>
+              </div>
+            </a>
+            <div
+              style={{
+                width: "100%",
+                display: "flex",
+                justifycontent: "center",
+                // backgroundColor: "red",
+                padding: "20px  ",
+                marginBottom: "20px",
+              }}
+            >
+              <div onClick={onClickimgproject} className="project__Enter">
+                자세히보기
+              </div>
+              <a onClick={onClickimgprojectpage} className="project__Enter">
+                체험하기
+              </a>
+            </div>
+          </div>
+
           <div style={{ marginLeft: " 10px" }}>
             <a
               href="https://chartreuse-zydeco-fd9.notion.site/8583e7aa3c4b425fb541f648c33c62b7"
@@ -555,6 +600,12 @@ export default function ProfilePage() {
         ></a>
         dfs
       </a>
+
+      <a
+        style={{ display: "none" }}
+        ref={imgproject}
+        href="https://chartreuse-zydeco-fd9.notion.site/Image-Project-de6e0aed4c544d9da49bc532dcf7fa41"
+      ></a>
     </div>
   );
 }
