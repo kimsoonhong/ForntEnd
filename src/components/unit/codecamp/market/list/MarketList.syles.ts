@@ -1,9 +1,13 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   width: 1200px;
   margin: auto;
   /* background-color: green; */
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 `;
 // ___베스트상품
 export const BestProduct = styled.div`
@@ -11,6 +15,9 @@ export const BestProduct = styled.div`
   /* background-color: greenyellow; */
   display: flex;
   flex-direction: column;
+  @media ${breakPoints.mobile} {
+    display: none;
+  }
 `;
 
 export const BestProductText = styled.div`
@@ -243,6 +250,10 @@ export const ProductListbottomPrice = styled.div`
   font-size: 24px;
   text-align: end;
   padding-right: 10px;
+  @media ${breakPoints.mobile} {
+    font-size: 18px;
+    /* background-color: skyblue; */
+  }
   /* background-color: blueviolet; */
 `;
 
@@ -285,6 +296,9 @@ export const TodayProductWrapper = styled.div`
   position: sticky;
   top: 125px;
   margin-right: 20px;
+  @media ${breakPoints.mobile} {
+    display: none;
+  }
 `;
 
 export const TodayProductText = styled.div`

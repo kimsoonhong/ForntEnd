@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Rate } from "antd";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const ItemWrapper = styled.div`
   width: 1200px;
@@ -7,6 +8,9 @@ export const ItemWrapper = styled.div`
   padding-top: 20px;
   /* height: 128px; */
   border-bottom: 1px solid lightgray;
+  @media ${breakPoints.mobile} {
+    display: none;
+  }
 `;
 
 export const FlexWrapper = styled.div`
@@ -75,6 +79,9 @@ export const RecommentWrapper = styled.div`
   padding-top: 20px;
   /* border-bottom: 1px solid lightgray; */
   /* padding-left: 30px; */
+  @media ${breakPoints.mobile} {
+    display: none;
+  }
 `;
 
 export const RecommentImg = styled.img`

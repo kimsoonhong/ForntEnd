@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   width: 800px;
@@ -12,6 +13,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   border: none;
+  @media ${breakPoints.mobile} {
+    /* background-color: skyblue; */
+    width: 100%;
+  }
 `;
 
 export const Header = styled.div`

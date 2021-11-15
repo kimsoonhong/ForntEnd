@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../unit/imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   position: ${(props: any) => (props.scrollY >= 376 ? "" : "sticky")};
@@ -21,6 +22,10 @@ export const Wrapper = styled.div`
   padding: 0 20%;
   z-index: 12;
   /* min-width: 880px; */
+
+  @media ${breakPoints.mobile} {
+    padding: 0;
+  }
 `;
 
 interface Iprops {
@@ -44,6 +49,9 @@ export const MenuItem = styled.div`
     box-sizing: unset;
     transition: all 400ms ease;
     cursor: pointer;
+  }
+  @media ${breakPoints.mobile} {
+    font-size: 12px;
   }
 `;
 export const Ber = styled.div``;

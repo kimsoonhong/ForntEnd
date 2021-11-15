@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   /* background-color: gray; */
@@ -6,6 +7,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   width: 380px;
   margin: auto;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+    padding: 20px;
+  }
 `;
 export const Img = styled.div`
   font-size: 100px;

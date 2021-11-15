@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   width: 1200px;
@@ -15,6 +16,11 @@ export const Wrapper = styled.div`
   border: none;
   box-shadow: 0px 0px 10px gray;
   margin: auto;
+
+  @media ${breakPoints.mobile} {
+    width: 100%;
+    padding: 5px;
+  }
 `;
 
 export const Title = styled.div`
@@ -30,6 +36,10 @@ export const WriterWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding-top: 40px;
+
+  @media ${breakPoints.mobile} {
+    flex-direction: column;
+  }
 `;
 
 export const Writer = styled.input`
@@ -37,6 +47,9 @@ export const Writer = styled.input`
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 `;
 
 export const Password = styled.input`
@@ -44,6 +57,9 @@ export const Password = styled.input`
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 `;
 
 export const Label = styled.div`
@@ -54,6 +70,13 @@ export const Label = styled.div`
 
 export const InputWrapper = styled.div`
   padding-top: 40px;
+  @media ${breakPoints.mobile} {
+    padding: 0;
+    @media ${breakPoints.mobile} {
+      width: 100%;
+    }
+    width: 100%;
+  }
 `;
 
 export const Subject = styled.input`
@@ -61,6 +84,10 @@ export const Subject = styled.input`
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export const Contents = styled.textarea`
@@ -69,11 +96,19 @@ export const Contents = styled.textarea`
   padding-left: 16px;
   padding: 14px;
   border: 1px solid #bdbdbd;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 `;
 
 export const ZipcodeWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  @media ${breakPoints.mobile} {
+    @media ${breakPoints.mobile} {
+      width: 100%;
+    }
+  }
 `;
 
 export const Zipcode = styled.input`
@@ -103,6 +138,9 @@ export const Address = styled.input`
   margin-top: 16px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 `;
 
 export const Youtube = styled.input`
@@ -110,6 +148,9 @@ export const Youtube = styled.input`
   height: 52px;
   padding-left: 16px;
   border: 1px solid #bdbdbd;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -117,6 +158,10 @@ export const ImageWrapper = styled.div`
   padding-top: 40px;
   display: flex;
   flex-direction: column;
+  @media ${breakPoints.mobile} {
+    /* background-color: silver; */
+    width: 100%;
+  }
 `;
 
 export const ImgButtonWrapper = styled.div`
@@ -166,6 +211,9 @@ export const ButtonWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   padding-top: 80px;
+  @media ${breakPoints.mobile} {
+    padding: 0;
+  }
 `;
 
 export const CancelButton = styled.button`

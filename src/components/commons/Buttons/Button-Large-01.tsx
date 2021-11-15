@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../unit/imgProject/src/commons/styles/media";
 
 const MyBtn = styled.button`
   width: 380px;
@@ -10,6 +11,10 @@ const MyBtn = styled.button`
   font-weight: 500;
   font-size: 20px;
   border-radius: 16px;
+
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 
   :hover {
     cursor: pointer;

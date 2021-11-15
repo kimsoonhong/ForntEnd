@@ -1,9 +1,13 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   /* background-color: brown; */
   width: 980px;
   padding-right: 380px;
+  @media ${breakPoints.mobile} {
+    width: 100%;
+  }
 `;
 export const PasswordWrapper = styled.div`
   /* background-color: cadetblue; */

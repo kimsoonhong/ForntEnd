@@ -1,16 +1,24 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   width: 100%;
   /* padding: 0 20%; */
 
   /* background-color: red; */
+  @media ${breakPoints.mobile} {
+    font-size: 1px;
+  }
 `;
 export const InnerWrapper = styled.div`
   width: 70%;
   /* margin: 800px; */
   margin: auto;
   /* background-color: aqua; */
+
+  @media ${breakPoints.mobile} {
+    width: 90%;
+  }
 `;
 export const TableTop = styled.div`
   border-top: 2px solid gray;
@@ -36,16 +44,27 @@ export const Row = styled.div`
 export const ColumnHeaderBasic = styled.div`
   width: 20%;
   text-align: center;
+  @media ${breakPoints.mobile} {
+    width: 50px;
+  }
 `;
 
 export const ColumnHeaderTitle = styled.div`
   width: 40%;
   text-align: center;
+  @media ${breakPoints.mobile} {
+    width: 70%;
+  }
 `;
 
 export const ColumnBasic = styled.div`
   width: 20%;
   text-align: center;
+  @media ${breakPoints.mobile} {
+    width: 50px;
+    /* background-color: red; */
+    text-overflow: ellipsis;
+  }
 `;
 
 export const ColumnTitle = styled.div`
@@ -57,6 +76,10 @@ export const ColumnTitle = styled.div`
     color: #2a653f;
     background-color: whitesmoke;
   }
+
+  @media ${breakPoints.mobile} {
+    width: 70%;
+  }
 `;
 
 export const Footer = styled.div`
@@ -65,6 +88,10 @@ export const Footer = styled.div`
   justify-content: flex-end;
   /* background-color: antiquewhite; */
   padding-top: 50px;
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+    flex-direction: column;
+  }
 `;
 
 export const Button = styled.button`
@@ -83,6 +110,12 @@ export const Button = styled.button`
     background-color: whitesmoke;
     font-weight: bold;
     animation: all 3000ms ease-in;
+  }
+
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 20px;
   }
 `;
 
@@ -109,6 +142,12 @@ export const Page = styled.div`
     font-weight: bold;
     animation: all 3000ms ease-in;
   }
+
+  @media ${breakPoints.mobile} {
+    /* background-color: royalblue; */
+    font-size: 12px;
+    margin: 1px;
+  }
 `;
 
 export const SearchWrapper = styled.div`
@@ -119,6 +158,10 @@ export const SearchWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: end;
+
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+  }
 `;
 export const SearchInput = styled.input`
   width: 200px;
@@ -130,6 +173,12 @@ export const SearchInput = styled.input`
   /* text-align: center; */
   flood-color: gray;
   /* margin-left: 80%; */
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+    width: 100px;
+    font-size: 10px;
+    height: 20px;
+  }
 `;
 
 export const Image = styled.img`

@@ -2,11 +2,18 @@
 import ReactPlayer from "react-player";
 import styled from "@emotion/styled";
 import { LikeOutlined, DislikeOutlined } from "@ant-design/icons";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   width: 1200px;
   margin: auto;
   padding-bottom: 60px;
+
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -20,6 +27,12 @@ export const CardWrapper = styled.div`
   align-items: center;
   border: none;
   box-shadow: 0px 0px 10px gray;
+
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+    width: 100%;
+    padding: 5px;
+  }
 `;
 
 export const Header = styled.div`
@@ -97,6 +110,17 @@ export const ImgWrapper = styled.img`
 
 export const Youtube = styled(ReactPlayer)`
   margin: auto;
+  margin-top: 200px;
+  width: 486px;
+  height: 240px;
+
+  @media ${breakPoints.mobile} {
+    background-color: red;
+    margin-top: 20px;
+    display: none;
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const BottomWrapper = styled.div`

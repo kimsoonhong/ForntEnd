@@ -1,10 +1,14 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   width: 1200px;
   margin: auto;
   padding-top: 40px;
   border-top: solid ghostwhite 4px;
+  @media ${breakPoints.mobile} {
+    display: none;
+  }
 `;
 
 export const Title = styled.div`

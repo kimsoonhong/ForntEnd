@@ -14,6 +14,7 @@ import {
   RightWrapperText,
   RightWrapperInput,
   RightWrapperButton,
+  TopWapper,
 } from "./LayoutHeader.styles";
 import Button01 from "../../Buttons/Button-small-01";
 import Head from "next/head";
@@ -121,7 +122,7 @@ export default function LayoutHeaderUI(props: ILayoutHeaderUIProps) {
       <Wrapper id="wrapper" scrollY={scrollY}>
         <InnerWrapper>
           <InnerLogo>ㅅㅜ ㅣ ㅁ</InnerLogo>
-          <div>
+          <TopWapper>
             <InnerButton onClick={props.onClickLogin}>
               {accessToken ? "" : "로그인하기"}
             </InnerButton>
@@ -148,7 +149,10 @@ export default function LayoutHeaderUI(props: ILayoutHeaderUIProps) {
                   <a
                     className="ant-dropdown-link"
                     onClick={(e) => e.preventDefault()}
-                    style={{ color: "black", fontSize: "24px" }}
+                    style={{
+                      color: "black",
+                      fontSize: "20px",
+                    }}
                   >
                     {props.data?.fetchUserLoggedIn.name}님 환영합니다.{" "}
                     <DownOutlined
@@ -162,7 +166,7 @@ export default function LayoutHeaderUI(props: ILayoutHeaderUIProps) {
                 </InnerButton>
               )}
             </InnerButton>
-          </div>
+          </TopWapper>
         </InnerWrapper>
       </Wrapper>
     </>

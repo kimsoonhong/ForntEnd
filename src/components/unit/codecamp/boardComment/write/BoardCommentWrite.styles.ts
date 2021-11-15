@@ -1,11 +1,19 @@
 import styled from "@emotion/styled";
 import { Rate } from "antd";
+import { breakPoints } from "../../../imgProject/src/commons/styles/media";
 
 export const Wrapper = styled.div`
   width: 1200px;
   margin: auto;
   padding-top: 40px;
   border-top: solid ghostwhite 4px;
+
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
 `;
 
 export const PencilIcon = styled.img``;
@@ -21,6 +29,11 @@ export const InputWrapper = styled.div`
   align-items: center;
   margin-top: 40px;
   margin-bottom: 20px;
+  @media ${breakPoints.mobile} {
+    /* background-color: seagreen; */
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const ContentsWrapper = styled.div`
@@ -35,6 +48,12 @@ export const Input = styled.input`
   padding-left: 20px;
   border: 1px solid lightgray;
   margin-right: 20px;
+
+  @media ${breakPoints.mobile} {
+    /* background-color: red; */
+    width: 100%;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Contents = styled.textarea`

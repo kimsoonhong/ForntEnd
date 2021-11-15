@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-
+import { breakPoints } from "../../../unit/imgProject/src/commons/styles/media";
 
 interface IProps {
   scrollY: any;
@@ -21,7 +21,9 @@ export const Wrapper = styled.div`
   transition: ease-in 200ms all;
   min-width: 600px;
   /* transition: 350ms all ease-in-out; */
-
+  @media ${breakPoints.mobile} {
+    min-width: 0;
+  }
 `;
 
 export const InnerWrapper = styled.div`
@@ -34,6 +36,9 @@ export const InnerWrapper = styled.div`
   font-size: 18px;
   line-height: 100px;
 
+  @media ${breakPoints.mobile} {
+    padding: 0;
+  }
 `;
 
 export const InnerLogo = styled.div`
@@ -44,8 +49,13 @@ export const InnerLogo = styled.div`
   font-weight: bold;
   font-family: "live";
   font-style: italic;
-
+  @media ${breakPoints.mobile} {
+    padding-left: 20px;
+    font-size: 32px;
+  }
 `;
+
+export const TopWapper = styled.div``;
 
 export const InnerButton = styled.span`
   margin: 18px;
@@ -55,6 +65,11 @@ export const InnerButton = styled.span`
   font-family: "normal";
   font-weight: bolder;
   font-size: 25px;
+
+  @media ${breakPoints.mobile} {
+    margin: 12px;
+    font-size: 20px;
+  }
 `;
 
 export const Menu1 = styled.div`

@@ -61,13 +61,7 @@ export default function BoardDetailUI(props: IBoardDetailUIProps) {
             />
           ))}
 
-          <Youtube
-            url={props.data?.fetchBoard.youtubeUrl}
-            width="486px"
-            height="240px"
-            muted
-            playing
-          />
+          <Youtube url={props.data?.fetchBoard.youtubeUrl} muted playing />
           <LikeWrapper>
             <LikeIconWrapper>
               <LikeIcon onClick={props.onClickLike} />
