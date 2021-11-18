@@ -1,6 +1,6 @@
 import Recipedetail from "../../../src/components/unit/recipe/src/components/unit/recipeDetail/recipedetail.container";
-// import Head from "next/head";
-// import axios from "axios";
+import Head from "next/head";
+import axios from "axios";
 import { useContext } from "react";
 import { GlobalContext } from "../../../pages/_app";
 

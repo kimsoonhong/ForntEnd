@@ -194,7 +194,7 @@ export default function BoardWriteUI(props: IBoardWriteUIProps) {
 
         <ButtonWrapper>
           <CancelBoutton onClick={props.onClickMoveToList}>
-            돌아가기
+            돌아가기.
           </CancelBoutton>
           <SubmitButton
             onClick={props.isEdit ? props.onClickUpdate : props.onClickSubmit}
