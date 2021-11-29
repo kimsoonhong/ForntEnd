@@ -18,7 +18,7 @@ export default function BoardCommentWriteUI(props: IBoardCommentWriteUIProps) {
       {!props.isEdit && (
         <>
           <FormOutlined style={{ fontSize: "20px" }} />
-          <span style={{ fontSize: "20px" }}>댓글</span>
+          <span style={{ fontSize: "20px" }}>댓 글</span>
         </>
       )}
       <InputWrapper>
